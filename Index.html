@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edible Cravings</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+  <header>
+    <h1><i class="fas fa-ultimate"></i>EDIBLE CRAVINGS</h1>
+    <p class="tagline">Authentic Flavours, Exceptional Taste</p>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-book-open"></i> Our Menu</h2>
+
+    <div class="app-container">
+      <section class="menu-section">
+        <div class="menu-items" id="menu-items"></div>
+      </section>
+
+      <section class="cart-section">
+        <h2 class="section-title"><i class="fas fa-plate-wheat"></i>🍽️ Your Plate</h2>
+        <div class="cart-items" id="cart-items">
+          <div class="empty-cart"> Your plate is empty. Add some delicious meal!</div>
+        </div>
+        <div class="cart-total">Total: ₦<span id="total">0.00</span></div>
+        <button id="submit-order">Submit Order</button>
+
+        <div class="cart-actions">
+          <button class="action-btn print-btn" id="print-order">
+            <i class="fas fa-print"></i> Print Order
+          </button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span>Meal Added to your plate!</span>
+  </div>
+
+  <div class="modal" id="success-modal">
+    <div class="modal-content">
+      <h2><i class="fas fa-check-circle"></i> Order Submitted!</h2>
+      <p>Thank you for your order! Your delicious Nigerian meal is being prepared and will be ready soon.</p>
+      <p>Estimated delivery time: <strong>30–45 minutes</strong></p>
+      <button class="close-modal" id="close-modal">Continue</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>    
