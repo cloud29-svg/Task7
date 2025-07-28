@@ -1,0 +1,269 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  padding: 0px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 10px;
+  background:linear-gradient(135deg, #00563b 0%, #008751 100%);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+   margin-bottom: 30px;
+}
+header ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image\ 10.jpg');
+    background-size: 200px;
+    opacity: 0.3;
+}
+
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-shadow: 4px 1px black;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-style: italic;
+  text-shadow: 4px 1px black;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #d35400;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-section, .cart-section {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.menu-img {
+  position: relative;
+}
+
+.menu-img img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #e67e22;
+  color: white;
+  padding: 3px 6px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-desc {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.add-btn {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn i {
+  margin-right: 5px;
+}
+
+
+
+.cart-items {
+  margin-bottom: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #ccc;
+  padding: 8px 0;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-btn {
+  padding: 2px 8px;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-total {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: right;
+  color: #d35400;
+}
+
+.empty-cart {
+  font-style: italic;
+  color: #999;
+  text-align: center;
+}
+
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+}
+/* :hover button{
+    background-color:wheat;
+    color: #000;
+} */
+
+#submit-order {
+  width: 100%;
+  background-color: #e67e22;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.cart-actions {
+  text-align: center;
+}
+
+.print-btn {
+  background-color: green;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+/* :hover .print-btn{
+    background-color: #999;
+    color: #000;
+} */
+
+
+.toast {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.modal-content h2 {
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+
+.close-modal {
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
