@@ -25,14 +25,14 @@ const meals = [
     name: "Pepper Soup",
     description: "Spicy assoted meat broth infused with traditional herbs ans spicies, served.",
     price: 2000,
-    image: "peppersoup.jpeg",
+    image: "peppersoup.jpg",
   },
   {
   id: 5,
   name: "Efo Riro",
   description: " Smooth pounded yam servesd with flavorful vegetable stew packed with assoted meats and fish.",
   price: 3500,
-  image: "eforiro.jpeg",
+  image: "eforiro.jpg",
 },
 {
   id: 6,
