@@ -4,7 +4,7 @@ const meals = [
     name: "Jollof Rice",
     description: "Aromatic rice cooked in tomato and pepper sauce with spices, served with plantains.",
     price: 3000,
-    image: "Image 10.jpg",
+    image: "Image10.jpg",
   },
   {
     id: 2,
